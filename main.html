@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering</title>
+    <link rel="icon" href="Title-Logo.png" type="image/png" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div id="particles-js" style="position: absolute; width: 100%; height: 100%; z-index: -1;"></div>
+
+    <nav class="nav-section" id="Home">
+        <div class="nav-logo">
+            <img src="Logo.png" alt="Logo" class="connect-logo" />
+        </div>
+
+        <div class="nav-container">
+            <div class="nav-links">
+                <div class="search-box">
+                        <a href="9.html" style="color: black;">Search</a>
+
+
+            </div>
+
+            <div class="nav-buttons">
+                <button class="Premium">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Crown" class="crown-icon">
+                    Premium
+                </button>
+                <button class="nav_Profile">
+                    <img src="Title-Logo.png" class="nav_profile_image" />
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="features">
+            <h2 class="features-header">Current Live Sessions</h2>
+            <div class="features-grid">
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 class="features-header">Domains</h2>
+            <div class="features-grid">
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 class="features-header">Top Creators</h2>
+            <div class="features-grid">
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 class="features-header">Faculty</h2>
+            <div class="features-grid">
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+                <div class="grid-card">
+                    <p>Webinars</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: contact@bridgegap.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-section" id="about">
+            <h4>About Us</h4>
+            <p>BridgeGap is focused on connecting opportunities with talent.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Help Center</a>
+        </div>
+        <div class="footer-section">
+            <p>&copy; 2025 BridgeGap. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const searchBox = document.getElementById("search");
+        const suggestionList = document.getElementById("suggestionList");
+        const suggestions = Array.from(suggestionList.children);
+
+        searchBox.addEventListener("focus", () => {
+            suggestionList.style.display = "flex";
+        });
+
+        searchBox.addEventListener("input", () => {
+            const val = searchBox.value.toLowerCase();
+            suggestions.forEach(item => {
+                const match = item.textContent.toLowerCase().includes(val);
+                item.style.display = match ? "block" : "none";
+            });
+        });
+
+        suggestions.forEach(item => {
+            item.addEventListener("click", () => {
+                searchBox.value = item.textContent;
+                suggestionList.style.display = "none";
+            });
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!e.target.closest(".search-box")) {
+                suggestionList.style.display = "none";
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+          "particles": {
+            "number": {
+              "value": 60
+            },
+            "color": {
+              "value": "#00ffff"
+            },
+            "shape": {
+              "type": "cirlcle"
+            },
+            "opacity": {
+              "value": 0.3,
+              "random": true
+            },
+            "size": {
+              "value": 50,
+              "random":true
+            },
+            "move": {
+              "enable": true,
+              "speed": 1
+            }
+          }
+        });
+      </script>
+</body>
+
+</html>
