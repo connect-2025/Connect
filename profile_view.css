@@ -7,17 +7,23 @@ background-attachment: fixed;
 background-size: cover;
     background-size: cover;
   }
-/* 
-  background : url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed; */
-  .profile-container {
-margin-top: 60px; /* Adds 40px of space above the container */
-margin-bottom: 60px;
-max-width: 960px;
-margin-left: auto;
-margin-right: auto;
-background: linear-gradient(90deg, #FFFFFF -40%, #ffffff 100%);
-padding: 20px;
-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+
+.profile-container {
+  margin-top: 60px; /* Adds 40px of space above the container */
+  margin-bottom: 60px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(90deg, #FFFFFF -40%, #ffffff 100%);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  /* background : url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed;  */
 }
 
 
@@ -30,6 +36,11 @@ box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 8px;
   }
 
+  .github-image , .linkedin-image{
+    width: 32px;
+    height: 32px;
+  }
+
   .profile-picture {
     position: absolute;
     bottom: -75px; /* increased to offset larger image */
@@ -38,7 +49,7 @@ box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 50%;
     width: 175px;  /* increased from 100px */
     height: 175px; /* increased from 100px */
-    background-image: url('https://images.unsplash.com/photo-1549924231-f129b911e442');
+    background-image: url('avatar3.png');
     background-size: cover;
     background-position: center;
   }
@@ -194,6 +205,10 @@ transition: all 0.2s;
   color: white;
   max-width: 80%;
   margin: auto;
+}
+
+.feature1-engg{
+  color: white;
 }
 
 .creator-header{

@@ -14,6 +14,13 @@
     font-style: normal;
   }
   
+  
+.dancing-script-hero-header2 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
 
 html {
     scroll-behavior: smooth;
@@ -271,7 +278,6 @@ a:link {
     font-size: 6rem;    
     font-weight: bold;
     text-shadow: 5px 10px 10px rgba(90, 100, 0, 0.3);
-    font-family: 'Lucida', monospace;
 }
 
 .hero-header1 {
